@@ -6,7 +6,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 CLAVE="${1:-}"; [ -n "$CLAVE" ] || { echo "Falta la clave del paquete:  bash instalar-cognatas.sh <clave>" >&2; exit 1; }
-HUELLA="681afc714f1955fe87c990d6a0940d9179861e836461e83c92b11124712a17f8"   # SHA-256 del paquete descifrado
+HUELLA="55235ded9cd70583f8caee7c33f0c7a0990f828f6bb2c9e46caaa50b9fd089b1"   # SHA-256 del paquete descifrado
 DIR="$HOME/entrega"
 paso() { printf '\n== %s\n' "$*"; }
 falla() { printf 'ERROR: %s\n' "$*" >&2; exit 1; }
